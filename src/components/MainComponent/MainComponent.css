@@ -1,0 +1,131 @@
+.board__container {
+  overflow-x: auto;
+}
+
+.board__header {
+  padding: 1.2rem 1rem;
+  background: var(--background-light);
+}
+
+.board__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.board__add-new {
+  border: none;
+  text-transform: capitalize;
+  padding: .75rem 1rem;
+  border-radius: 10000rem;
+  font-size: .85rem;
+  cursor: pointer;
+  background: var(--sidebar-highlight-label);
+  transition: box-shadow .2s ease-in;
+}
+.board__add-new:hover,
+.board__add-new:focus {
+  box-shadow: 0 0 .3rem 1px var(--sidebar-highlight-label-light);
+}
+.board__add-new::before {
+  content: "+";
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: .75rem;
+}
+
+.boards__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.board__category {
+  /* width: 95%; */
+  width: 340px;
+  padding: .4rem .6rem;
+}
+
+.board__category-title {
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: .4rem 1rem;
+  display: inline-block;
+  position: relative;
+}
+.board__category-title::before{
+  content: "";
+  width: .6rem;
+  height: .6rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--border-color);
+}
+
+.board__category-title::after {
+  content: attr(data-length);
+  /* content: "("; */
+  position: absolute;
+  left: 100%;
+  color: var(--border-color)
+}
+
+.board__category-title-todo::before {
+  background-color: var(--todo-indicator);
+}
+.board__category-title-doing::before {
+  background-color: var(--doing-indicator);
+}
+.board__category-title-completed::before {
+  background-color: var(--completed-indicator);
+}
+
+
+.board__category-items {
+  height: 80vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.board__item {
+  border-radius: .25rem;
+  padding: 1rem .85rem;
+  background: var(--background-light);
+  width: 100%;
+}
+
+.board__item-title {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: .3rem 0;
+}
+
+.board__subtasks-info {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--border-color);
+}
+
+.board__category-add {
+  height: 80vh;
+  border-radius: .25rem;
+  background-color: var(--background-light);
+  margin-top: 2.2rem;
+  justify-content: center;
+  color: var(--text-color);
+  position: relative;
+}
+.board__category-add::before {
+  content: "+";
+  position: absolute;
+  left: 20%;
+}
