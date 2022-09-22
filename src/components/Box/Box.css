@@ -1,0 +1,7 @@
+.box__container {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
+  color: var(--text-color);
+  background: var(--background-dark);
+}

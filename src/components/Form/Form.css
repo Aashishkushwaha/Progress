@@ -1,0 +1,69 @@
+.form__container {
+  margin-bottom: -1rem;
+}
+
+.form__title {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.form__field--container {
+  margin: .85rem 0;
+}
+
+.form__field--label {
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: .875rem;
+  margin-bottom: .1rem;
+  color: var(--text-color);
+}
+
+.form__field--input,
+.form__field--textarea,
+.form__field--select {
+  width: 100%;
+  resize: none;
+  font-size: 1rem;
+  padding: .5rem;
+  margin: 0 auto;
+}
+
+.form__field--select {
+  text-transform: capitalize;
+}
+
+.form__field--button {
+  width: 100%;
+  border: none;
+  padding: .75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  /* color: var(--text-color); */
+}
+
+.form__field--rounded-button {
+  border-radius: 10000rem;
+}
+
+.form__field--primary-button {
+  background: var(--sidebar-highlight-label);
+}
+.form__field--secondary-button {
+  background: var(--white);
+  color: var(--border-color);
+}
+
+.form__field--checkbox input[type="checkbox"] {
+  transform: scale(1.2);
+}
+.form__field--checkbox span {
+  color: var(--text-color);
+}
+.form__field--checkbox input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: var(--border-color) !important;
+}

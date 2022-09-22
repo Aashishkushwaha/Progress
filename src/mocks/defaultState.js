@@ -6,6 +6,7 @@ export default {
         todo: [
           {
             title: "East Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -15,6 +16,7 @@ export default {
           },
           {
             title: "East Task 2",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -26,6 +28,7 @@ export default {
         doing: [
           {
             title: "East Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -38,9 +41,10 @@ export default {
             ],
           },
         ],
-        completed: [
+        done: [
           {
             title: "East Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -61,6 +65,7 @@ export default {
         todo: [
           {
             title: "West Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -72,6 +77,7 @@ export default {
         doing: [
           {
             title: "West Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -84,9 +90,10 @@ export default {
             ],
           },
         ],
-        completed: [
+        done: [
           {
             title: "West Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -107,6 +114,7 @@ export default {
         todo: [
           {
             title: "North Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -118,6 +126,7 @@ export default {
         doing: [
           {
             title: "North Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -130,9 +139,10 @@ export default {
             ],
           },
         ],
-        completed: [
+        done: [
           {
             title: "North Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -153,6 +163,7 @@ export default {
         todo: [
           {
             title: "South Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -164,6 +175,7 @@ export default {
         doing: [
           {
             title: "South Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -176,9 +188,10 @@ export default {
             ],
           },
         ],
-        completed: [
+        done: [
           {
             title: "South Task 1",
+            description: "Dummy description",
             subtasks: [
               {
                 title: "Task 1",
@@ -195,4 +208,6 @@ export default {
     },
   ],
   selectedBoard: 0,
+  selectedTask: -1,
+  selectedColumn: null,
 };

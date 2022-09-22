@@ -1,9 +1,11 @@
 .board__container {
+  display: grid;
   overflow-x: auto;
+  grid-template-rows: 5rem calc(100vh - 6rem);
 }
 
 .board__header {
-  padding: 1.2rem 1rem;
+  padding: 1rem;
   background: var(--background-light);
 }
 
@@ -35,23 +37,24 @@
 }
 
 .boards__list {
-  display: flex;
-  justify-content: space-evenly;
   gap: 1rem;
+  display: flex;
+  padding: 0 1rem;
   overflow-x: auto;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 .board__category {
-  /* width: 95%; */
-  width: 340px;
+  width: 30rem;
   padding: .4rem .6rem;
 }
 
 .board__category-title {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--text-color);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: .85rem;
   padding: .4rem 1rem;
   display: inline-block;
   position: relative;
@@ -69,11 +72,11 @@
 }
 
 .board__category-title::after {
-  content: attr(data-length);
-  /* content: "("; */
-  position: absolute;
+  top: .25rem;
   left: 100%;
-  color: var(--border-color)
+  position: absolute;
+  color: var(--border-color);
+  content: "(" attr(data-length) ")";
 }
 
 .board__category-title-todo::before {
@@ -82,7 +85,7 @@
 .board__category-title-doing::before {
   background-color: var(--doing-indicator);
 }
-.board__category-title-completed::before {
+.board__category-title-done::before {
   background-color: var(--completed-indicator);
 }
 
@@ -96,10 +99,11 @@
 }
 
 .board__item {
-  border-radius: .25rem;
-  padding: 1rem .85rem;
-  background: var(--background-light);
   width: 100%;
+  cursor: pointer;
+  padding: 1rem .85rem;
+  border-radius: .25rem;
+  background: var(--background-light);
 }
 
 .board__item-title {
@@ -115,6 +119,7 @@
   color: var(--border-color);
 }
 
+/* 
 .board__category-add {
   height: 80vh;
   border-radius: .25rem;
@@ -128,4 +133,4 @@
   content: "+";
   position: absolute;
   left: 20%;
-}
+} */
